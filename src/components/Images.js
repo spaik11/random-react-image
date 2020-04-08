@@ -19,11 +19,10 @@ class Images extends Component {
     };
 
     randomImage = () => {
-        this.setState({ image: images[Math.floor(Math.random() * 10)]})
+        this.setState({ image: images[Math.floor(Math.random() * 10)]});
     };
 
     render() {
-
         return (
             <div>
                 <img 
@@ -35,7 +34,7 @@ class Images extends Component {
                     style={{ height: '50px', width: '70px'}}
                     onClick={this.randomImage}>Click Me</button>
             </div>
-        )
+        );
     };
 };
 
